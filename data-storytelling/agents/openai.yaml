@@ -1,4 +1,4 @@
 interface:
   display_name: "Data Storytelling"
-  short_description: "Build persuasive stories from evidence and data"
-  default_prompt: "Use $data-storytelling to turn my evidence into a concise business narrative with a clear BLOT and takeaway."
+  short_description: "Structure credible, evidence-led professional narratives"
+  default_prompt: "Use $data-storytelling to turn my source material into a concise, accurate narrative for the intended audience; do not invent claims or evidence."

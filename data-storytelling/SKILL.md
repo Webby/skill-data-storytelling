@@ -1,89 +1,82 @@
 ---
 name: data-storytelling
-description: Turn factual material, metrics, findings, or lived experience into clear, persuasive business narratives. Use when drafting, restructuring, or reviewing executive presentations, business cases, decision memos, speeches, reports, or professional posts that must explain why evidence matters and lead to a takeaway or action. Do not use for fictional storytelling, purely decorative copy, or requests limited to formatting or grammar correction.
+description: Create, restructure, outline, or critically review evidence-based business narratives, executive presentations, decision memos, analytical reports, and professional thought-leadership posts. Use when a user wants to communicate factual findings or experience with a clear takeaway, argument, or decision. Not for fiction, unsupported persuasion, pure proofreading, or cosmetic formatting alone.
 ---
 
-# Data Storytelling
+# Data Storytelling — v0.2
 
-Transform evidence into a message the intended audience can understand, remember, and act on. Follow the user's requested format and voice; this skill is a narrative method, not a document or slide-generation tool.
+Make factual material understandable and decision-useful without making it more certain, dramatic, or causal than the evidence allows. Preserve the requested medium, audience, voice, and language. This skill supplies a narrative method, not a file-rendering tool.
 
-## Source of truth
+## Non-negotiables
 
-- Treat the user's supplied documents, data, and experience as the factual basis. Never invent facts, quotes, metrics, causal links, emotions, or outcomes to complete a narrative arc.
-- Separate **fact**, **inference**, and **recommendation** where ambiguity matters. Flag unsupported claims and missing evidence instead of smoothing them over.
-- Preserve uncertainty, limitations, unsuccessful attempts, and genuine disagreements. Create tension from actual stakes or trade-offs, never from manufactured drama.
-- Use the user's language and the domain's accepted terminology. Define acronyms on first use for audiences who may not know them.
-- Read `references/HOW_TO_STORYTELLING.md` when choosing among narrative structures, applying slide-specific rules, or auditing a completed story. It contains the original author-provided guide and is authoritative for this skill's method.
+- The user's evidence, lived experience, and instructions are the factual basis. Never invent metrics, dates, testimonials, emotions, failures, consensus, causal explanations, outcomes, or source citations.
+- Keep **observed facts**, **interpretation**, **hypotheses**, and **recommendations** distinguishable whenever readers could confuse them. Label material assumptions or evidence gaps.
+- A strong narrative is not permission to cherry-pick, distort scales, overstate statistical evidence, remove relevant counterevidence, or create a false hero/villain. When uncertainty is material, state it near the relevant claim.
+- Respect terminology and privacy. Expand unfamiliar acronyms on first use for the audience. Do not expose confidential detail merely to make a story vivid.
+- Use the original user-authored guide as the methodological anchor: [HOW_TO_STORYTELLING.md](references/HOW_TO_STORYTELLING.md). Additional references refine—not silently replace—its principles. If a preference conflicts with evidence integrity or accessibility, prioritize accuracy and explain the trade-off.
 
 ## Workflow
 
-### 1. Frame the assignment (Who / What / How)
+### 1. Frame the communication
 
-Extract from the request and supplied materials:
+Infer from supplied context: **Who** is the audience and what do they already know? **What** must they know, feel (if relevant), and do? **How** will they consume it (medium, length, presentation vs. reading, available visuals)? Identify the actual **audience question** or decision at stake. Avoid a questionnaire when sufficient context already exists; ask only when a missing fact blocks a responsible result.
 
-- **Who:** audience, familiarity, decision authority, expectations and credibility needs.
-- **What:** the one thing to **know**, **feel**, and **do** after reading or listening.
-- **How:** medium, time/length budget, available evidence, constraints, and suitable visual or supporting material.
+Select a mode: `draft`, `rewrite`, `outline`, or `critique`. Preserve user-imposed constraints and factual wording that must remain unchanged.
 
-Determine whether the user wants a **new draft**, **rewrite**, **outline**, or **critique**. Work with known inputs; ask at most a focused question when an indispensable factor is missing and cannot be reasonably inferred. Otherwise state a material assumption briefly and proceed.
+### 2. Make an evidence-first message
 
-### 2. Establish the evidence and message
+- Identify the 1–3 strongest supported findings and the most relevant baseline, comparison, or counterpoint.
+- For consequential or quantitative content, privately map **claim → supporting source/value → limitation → implication** using [evidence-integrity.md](references/evidence-integrity.md). For short posts, use a lightweight version; do not print an evidence ledger unless requested or needed to flag uncertainty.
+- Form a one-sentence **BLOT** (Bottom Line On Top): the defensible answer, insight, or recommendation—not a category title. If the evidence does not warrant a conclusion, frame a question or cautious hypothesis instead.
+- Establish **stakes** through an actual gap, unexpected contrast, constraint, consequence, or unresolved decision; do not invent conflict. Balance logos (reasoning), pathos (real human stakes), and ethos (credible limitations) where appropriate.
+- Identify an actionable next step only if supported by the task; otherwise deliver a takeaway, open question, or decision needed.
 
-- Extract 1–3 defensible findings and their supporting facts.
-- Distill a single-sentence **BLOT (Bottom Line On Top)**: a conclusion, recommendation, or insight, not a topic label.
-- Identify the specific change, obstacle, trade-off, or surprise that makes the message worth telling. Do not assume a dramatic conflict is required when facts do not support one.
-- Determine the **takeaway or call to action (CTA)**; if no action is justified, use a clear insight rather than inventing an ask.
-- For persuasive work, balance **logos** (argument and evidence), **pathos** (real human stakes), and **ethos** (transparent credibility). Do not exaggerate any of them.
+### 3. Choose a structure, rather than imposing one
 
-### 3. Choose the smallest suitable narrative structure
+| Reader need | Default structure |
+| --- | --- |
+| Executive decision / business case | BLOT → minimum situation → real complication → audience question → answer/recommendation and evidence |
+| Short executive update | Hook or answer → up to 3–4 prioritized points → implication / next decision |
+| Personal or team change | Initial state → actual challenge → response and trade-offs → documented change → lesson, if earned |
+| Persuasive live presentation | Contrast between **what is** and evidence-supported **what could be**, returning to the decision |
+| Analytical finding with no dramatic arc | Evidence → comparison / interpretation → limitation → implication |
 
-| Situation | Preferred structure | Core sequence |
-| --- | --- | --- |
-| Senior audience, time pressure, short status or brief | Executive summary | Hook → 3–4 key points → conclusion / CTA |
-| Decision, business case, strategic recommendation | BLOT / SCR | BLOT → Situation → Complication → Resolution |
-| First-person or team transformation grounded in lived events | Hero's Journey | Initial state → challenge → response / struggle → changed state → optional lesson |
-| Genuine events fit a recurring emotional arc | One of the seven basic plots | Select only when the source evidence supports that plot |
+In Minto's framework, **SCQ** (Situation, Complication, Question) is a way to discover the reader's question; the **answer** may be placed first as the BLOT in the final communication. Do not treat the SCQ planning sequence as an obligatory visible heading sequence. Hero's Journey and the seven basic plots are optional creative scaffolds, never proof of a universal story law. See [narrative-patterns.md](references/narrative-patterns.md).
 
-Prefer **BLOT / SCR** for business arguments with an explicit decision. Prefer **executive summary** for short, top-down communication. Use the Hero's Journey or seven plots only when the material genuinely supports the sequence. Do not force every stage or fabricate a happy ending. Consult the source guide for all seven plots and their stage definitions.
+### 4. Draft for the medium
 
-### 4. Write or restructure
+- Lead with the real conclusion or a specific hook that reaches it promptly. Use an evidence-to-implication progression; keep one main idea per paragraph or slide.
+- **Slides:** conclusion-led headline plus a precise statistical/chart title as needed; clear source, timeframe, units, and comparison; few coherent blocks as a heuristic, not a numerical law. Do not recommend visual embellishment that hides information.
+- **Reports and memos:** clear section takeaways, source traceability, and balanced alternatives or risks for decisions.
+- **Professional posts / speeches:** natural voice, authentic tension, a clear turn, and concise takeaway; avoid sensationalism or generic motivational copy.
+- **Charts:** suggest visuals only when the task would benefit; pick chart type by relationship, not fashion. Consult [visual-guidance.md](references/visual-guidance.md) for scale, labels, uncertainty, and accessible alternatives. Never claim to have rendered a chart or sourced new figures unless done.
+- Match audience vocabulary; use plain, exact wording without deleting necessary technical detail.
 
-- Open with the strongest defensible conclusion or a hook that quickly leads to it. Do not bury the point.
-- Establish only the context needed for the complication to make sense.
-- Show the actual obstacle, tension, or unexpected result and why it matters.
-- Resolve with evidence, implications, a recommendation, and the next decision when appropriate.
-- Keep one main message per paragraph, section, or slide; remove repeated context and filler.
-- Prefer short, precise language. Retain specialized jargon for knowledgeable audiences; otherwise translate it. Expand non-obvious acronyms once.
-- Adapt to the requested medium:
-  - **Slides:** use conclusion-led (BLOT) headlines; aim for no more than 3–4 information blocks per slide; label graphics and axes; make the pivotal data visually prominent; recommend progressive reveals only where they help comprehension.
-  - **Memo / report:** use conclusion-led headings and evidence-to-implication transitions; preserve traceability to supplied sources.
-  - **Post / speech:** use a concise opening, a clear turn, and a memorable takeaway; avoid generic inspirational phrasing and artificially heightened emotion.
+### 5. Adversarial review before delivery
 
-### 5. Check the narrative before delivering
+Check for (a) unsupported/false causal or quantitative claims, (b) missing baseline, timeframe, denominator, uncertainty or counterevidence, (c) an overfitted emotional arc, (d) a buried BLOT, (e) inaccessible or misleading visual recommendations, and (f) unclear implication. **Evidence-integrity failures are blockers**, not polish suggestions. Use [quality-evaluation.md](references/quality-evaluation.md) when critiquing or assessing a substantial deliverable. Revise proportionately; do not add ritual headings or explanations that the user did not request.
 
-Verify all applicable checks:
+## Output by mode
 
-1. The BLOT is one clear, defensible sentence.
-2. Who / What / How are answered, using only supplied or declared inputs.
-3. A suitable narrative structure is recognizable but not artificial.
-4. The real complication or trade-off is explained; none is invented.
-5. Every significant number, quotation, and result is grounded; uncertainty is visible.
-6. Slide or section titles state conclusions where appropriate; visual density stays controlled.
-7. Wording matches audience fluency; acronyms are defined when necessary.
-8. The conclusion makes the implication or next step explicit, without inventing a CTA.
-9. The piece can be summarized faithfully in one line and, for substantive pieces, in roughly three minutes.
+- **Draft / rewrite:** output the artifact first. Add only material caveats or a short change note when useful. Never append an unrequested full methodology, 3-minute version, or alternative that dilutes the requested format.
+- **Outline:** propose section/slide-level conclusion titles, supporting evidence, transitions, and open evidence gaps.
+- **Critique:** rank up to three consequential issues, state evidence-based fixes, and illustrate one revised opening/headline if useful. Distinguish a factual defect from a stylistic preference.
+- **Executive presentation when requested:** provide a one-line BLOT and a ~3-minute compression, preserving evidence, unless the user explicitly wants only one format.
 
-If a check fails, revise before returning the result. In **critique** mode, prioritize the 3 highest-impact issues, explain why they matter, and suggest actionable edits without rewriting everything unless requested.
+## Reference routing
 
-## Default output
+Read only what the task requires:
 
-- **Draft / rewrite:** deliver the requested artifact first, without a long explanation of the method. For a substantial narrative, append a **one-line BLOT** and a **three-minute version** when useful and not in conflict with the requested length or format.
-- **Outline:** provide the chosen structure, section-level messages, key evidence, and unresolved facts.
-- **Critique:** provide a concise diagnosis, ranked fixes, and an example revised opening or headline when helpful.
-- **Missing evidence:** briefly identify exactly what is unsupported. Never silently convert a proposal into an established result.
+- [HOW_TO_STORYTELLING.md](references/HOW_TO_STORYTELLING.md) — original narrative method and seven plot descriptions.
+- [narrative-patterns.md](references/narrative-patterns.md) — advanced SCQ/BLOT, contrast, transformation, and short-form choices.
+- [evidence-integrity.md](references/evidence-integrity.md) — quantitative claims, provenance, uncertainty, and causal language.
+- [visual-guidance.md](references/visual-guidance.md) — chart selection, ethical graphics, and accessibility.
+- [quality-evaluation.md](references/quality-evaluation.md) — audit rubric and release checks.
+- [research-crosswalk.md](references/research-crosswalk.md) — dated, independently traceable research and how it changed this skill. Use it to trace guidance; do not assume external sources have been freshly rechecked during the current task.
+- [evaluation-cases.md](references/evaluation-cases.md) — behavioral test cases for human- or agent-run evals; not evidence of test execution.
 
-## Invocation examples
+## Examples of explicit invocation
 
-- "Use $data-storytelling to turn these quarterly metrics into a five-slide executive story."
-- "Apply $data-storytelling to my LinkedIn draft; keep the facts, sharpen the tension, and shorten it."
-- "Review this decision memo with $data-storytelling. Identify the BLOT, narrative gaps, and unsupported claims."
+- `Use $data-storytelling to build an evidence-led executive argument from this quarterly report.`
+- `Critique this LinkedIn post with $data-storytelling: preserve my voice and identify unsupported claims.`
+- `Create a five-slide outline for this proposal, with conclusion headlines and traceable figures.`

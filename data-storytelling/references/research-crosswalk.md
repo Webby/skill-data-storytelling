@@ -1,0 +1,60 @@
+# Research crosswalk — data-storytelling v0.2
+
+**Review date:** 2026-11-11. **Scope:** Cross-reference the user-authored HOW TO STORYTELLING against public methodological sources, professional guidance, and research; record what changed in v0.2. This is a curated research synthesis, not a systematic literature review, independent replication, or claim of standards certification. The user's original reference is preserved byte-for-byte in `HOW_TO_STORYTELLING.md`.
+
+## Provenance and strength of evidence
+
+- **USER:** The original user's guide is the source for the desired storytelling method and vocabulary (logos/pathos/ethos, Who/What/How, BLOT, executive summary, Hero's Journey, seven plots, 3–4 chunks, one-line and 3-minute variants).
+- **PRIMARY/PRACTICE:** Original framework owners (Minto, Duarte, storytellingwithdata) explain methods and heuristics; these are **not** experimental proof of universal effects.
+- **GUIDANCE:** National statistical agencies, the W3C, IBCS, and the ASA provide professional standards and integrity/accessibility guidelines; mandates depend on the actual context and medium.
+- **RESEARCH:** Peer-reviewed studies show both potential benefits and limits of narrative visualization; do not generalize a study design to all professional communication.
+- **DESIGN CHOICE:** Explicit v0.2 operational rule derived from combining sources; it is the skill author's synthesis, not necessarily the wording or requirement of an individual source.
+
+## Source-to-design cross-reference
+
+| Original guide area | External cross-reference | Convergence / tension | v0.2 implementation |
+| --- | --- | --- | --- |
+| §1 storytelling increases understanding, feeling, recall | [R13], [R14], [R15] | Evidence on comprehension is conditional; memory outcomes mixed; narrative framing can bias interpretation | Avoid blanket memory claims; use accuracy and decision utility as aims, make framing subject to review |
+| §2 Who/What/How | [R02], [R04], [R05] | Strong convergence on audience, question, intended action, and available data | Frame reader's *question* and what action is justified, before choosing structure |
+| §3 BLOT headlines and contrast | [R02], [R03], [R05], [R16] | Takeaway headlines help focus, but context/precision must remain visible | Conclusion-led headline **plus** descriptive measure/period/source where necessary |
+| §3 3–4 blocks, one palette, progressive reveals | [R03], [R05], [R09], [R10] | Visual economy and focus align; a fixed block count and builds are context-dependent; color-only encoding is inaccessible | Treat 3–4 as heuristic, builds as optional, add accessible alternate text and reading order |
+| §3 chart labeling / anti-patterns | [R05], [R06], [R07], [R08], [R11], [R16] | Supplement labels with baseline, uncertainty, source, chart-type fit, consistent notation | Visual checklist and chart decision table; nonzero bar baseline blocked; nuanced line baselines |
+| §4 BLOT / Situation / Complication / Resolution, credited to Minto | [R01], [R17] | Minto explicitly uses Situation–Complication–Question to identify the reader's question; the guide's BLOT/SCR is a practical adaptation, not an exact quotation of SCQ | Separate SCQ planning and front-loaded answer/BLOT presentation; retain guide terminology |
+| §4 Hero's Journey; §5 seven plots | [R03], [R13], [R15] | These are storytelling options, not empirically mandatory templates; author-driven sequencing may steer interpretation | Use only when events support them; add evidence-first/no-drama structure |
+| §6 jargon and plain language | [R12], [R19] | Clarity and transparency must coexist with legitimate technical precision | Match audience vocabulary, define unfamiliar terms, retain necessary qualifiers |
+| §7 CTA, one-line / three-minute versions | [R01], [R02], [R04] | Reader needs and decision come first; forcing a CTA or appendix can worsen irrelevant outputs | Action only when appropriate; variants on request or relevant executive task |
+| New: source fidelity and uncertainty | [R05], [R08], [R12], [R15] | Accuracy requires provenance, definitions, alternative interpretations, and visible uncertainty | Claim trace, evidence gates, causality checks, fair counterevidence |
+| New: accessibility | [R09], [R10], [R16] | Essential meaning cannot depend on color or inaccessible images | Require text alternative/accessible data for complex graphics |
+| New: compact skill architecture and evals | [R17], [R18] | Triggering via `name`/`description`, staged reference loading; no proof of quality without behavioral evals | Smaller SKILL.md, conditional references, 12 test prompts and explicit negative controls |
+
+## Source register
+
+These sources were located and inspected online during the 2026-11-11 revision. URLs are provided for future verification. No entire external source is copied into the skill.
+
+- **R01 — Barbara Minto (primary method).** *The Minto Pyramid Principle* official site: <https://barbaraminto.com/>; course detail: <https://www.barbaraminto.com/course>. Documents single-point pyramid and SCQ reader-question framework. **Supports:** audience question, logical grouping, decision writing. **Limit:** no empirical claim that SCQ is optimal in all contexts.
+- **R02 — storytelling with data (practitioner).** *Creating a visual story: questions to ask* (2012): <https://www.storytellingwithdata.com/blog/2012/05/creating-visual-story-questions-to-ask>; *How to tell a story with data*: <https://www.storytellingwithdata.com/blog/what-your-audience-really-wants>. **Supports:** audience action, context, clutter reduction, focus, precise text and comparisons.
+- **R03 — Duarte (primary method).** *Using Contrast to Craft Persuasive Presentations*: <https://www.duarte.com/blog/ultimate-guide-to-contrast/>. **Supports:** contrast between what-is / what-could-be, recurring tension, persuasive presentation. **Limit:** presentation design framework, not predictive research.
+- **R04 — storytelling with data (practitioner).** *What's the big idea?*: <https://community.storytellingwithdata.com/exercises/whats-the-big-idea>. Credits Nancy Duarte's Big Idea and emphasizes stance, stakes, complete sentence. **Supports:** message drafting and audience action.
+- **R05 — Statistics Canada (official guidance).** *Data Visualization: Best Practices* (2023): <https://www150.statcan.gc.ca/n1/pub/89-26-0005/892600052022001-eng.htm>. **Supports:** source/time/units, visual choice, audience, baseline and labels. **Limit:** practices need application-specific judgment.
+- **R06 — Datawrapper (practitioner, specific chart behavior).** *Why our column and bar charts start at zero (or below)*: <https://www.datawrapper.de/docs/why-our-column-and-bar-charts-start-at-zero>. **Supports:** bar/column baseline integrity; suggests dot/range alternatives. **Limit:** particular encodings, not every axis on every chart.
+- **R07 — Datawrapper (practitioner).** *What to consider when creating line charts*: <https://www.datawrapper.de/blog/line-charts>. **Supports:** line baselines may be nonzero if transparently labeled, limits of smoothing.
+- **R08 — UK Office for National Statistics (official guidance).** *Showing uncertainty in charts*: <https://service-manual.ons.gov.uk/data-visualisation/guidance/showing-uncertainty-in-charts>; *Communicating quality, uncertainty and change*: <https://analysisfunction.civilservice.gov.uk/policy-store/communicating-quality-uncertainty-and-change/>. **Supports:** bands/ranges, annotations, explain uncertainty clearly.
+- **R09 — W3C WAI (accessibility guidance).** *Images Tutorial*: <https://www.w3.org/WAI/tutorials/images/>. **Supports:** text alternatives, including complete textual equivalents for complex charts.
+- **R10 — W3C WAI WCAG 2.2 (accessibility guidance).** *Understanding Use of Color*: <https://www.w3.org/WAI/WCAG22/Understanding/use-of-color>. **Supports:** color is not the only carrier of information.
+- **R11 — IBCS Association (business reporting guidance).** *IBCS Standards 2.0 — aligned with ISO 24896*, released 2026-06-11 per the association: <https://www.ibcs.com/ibcs-version-2-0/>. **Supports:** consistent notation, chart/table integrity and communication. **Limit:** citing association's claim of alignment is not verifying or certifying the skill against the ISO text.
+- **R12 — American Statistical Association (ethical guidance).** *Ethical Guidelines for Statistical Practice* (2022): <https://www.amstat.org/your-career/ethical-guidelines-for-statistical-practice>. **Supports:** provenance, methods, missing data, assumptions, limitation, bias, fair reporting and correction.
+- **R13 — CHI 2024 (peer-reviewed research).** *Data Storytelling in Data Visualisation: Does it Enhance the Efficiency and Effectiveness of Information Retrieval and Insights Comprehension?*: <https://doi.org/10.1145/3613904.3643022>. Abstract reports study of 103 people with improvements in some comprehension outcomes, **not** all outcomes. **Limit:** task- and experiment-specific, not proof of broad business impact.
+- **R14 — CHIIR 2022 (peer-reviewed research).** *The Influence of Data Storytelling on the Ability to Recall Information*: <https://doi.org/10.1145/3498366.3505755>. Abstract reports **no significant general recall difference** between traditional and storytelling visualizations. **Limit:** no proof of universally absent benefit either.
+- **R15 — Hullman and Diakopoulos (peer-reviewed research).** *Visualization Rhetoric: Framing Effects in Narrative Visualization* (2011): <https://www.hullmanlab.northwestern.edu/paper/2011/02/01/vis-rhetoric.html>. **Supports:** authors can steer interpretation via omissions, display and annotations; motivates adversarial review.
+- **R16 — GOV.UK Design System / Analysis Function (official guidance).** *Data*: <https://brand.design-system.service.gov.uk/data/>; *Accessible charts checklist*: <https://analysisfunction.civilservice.gov.uk/policy-store/charts-a-checklist/>. **Supports:** choose chart by relationship, chart clarity, accessible source and descriptive titles.
+- **R17 — OpenAI / ChatGPT Learn (platform documentation).** *Build skills*: <https://learn.chatgpt.com/docs/build-skills>; *Build plugins*: <https://learn.chatgpt.com/docs/build-plugins>. **Supports:** skill format, staged loading, invocation, local vs plugin distribution distinctions. **Limit:** availability depends on product surface/account.
+- **R18 — OpenAI (evaluation methodology).** *Testing Agent Skills Systematically with Evals*: <https://developers.openai.com/blog/eval-skills>. **Supports:** explicit/implicit triggering tests, negative controls, run traces, deterministic and rubric checks. **Limit:** included eval examples have not themselves been executed in this delivery.
+- **R19 — ISO (plain-language standard synopsis).** *ISO 24495-1:2023 Plain language*: <https://www.iso.org/fr/standard/78907.html>. **Supports:** reader-oriented plain wording across written languages. **Limit:** standard text not reproduced and the skill is not certified against it.
+
+## Research limits and dissenting evidence
+
+1. Storytelling frameworks are **methods**, not universally validated algorithms. Avoid claiming storytelling always improves memory, persuasion, or business outcomes; R13 and R14 differ by measured task and show why outcomes must be specified.
+2. The seven plots remain useful metaphors from the author's guide, but R01 (Minto) and R03 (Duarte) answer different communication problems. No requirement that they can be merged into a single obligatory master plot.
+3. The original rule "3–4 blocks" is a design heuristic. Statistical source labels, required uncertainty, and accessibility may demand additional detail rather than fewer elements.
+4. Standards guidance is contextual. R11 describes a 2026 reporting standard; this skill uses its broad principles but does not assert complete conformity or force specialized notation on casual posts.
+5. Links can change after this date. The register is traceability, **not** a guarantee of continued availability or a license to invent refreshed evidence.
